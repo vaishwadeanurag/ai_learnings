@@ -1,0 +1,25 @@
+[project]
+name = "scrapper"
+version = "0.1.0"
+description = "URL image captioner"
+authors = [
+    {name = "anuragvaishwade",email = "anurag.vaishwade.contractor@macmillan.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi (==0.115.0)",
+    "uvicorn[standard] (==0.31.1)",
+    "requests (==2.32.3)",
+    "beautifulsoup4 (==4.12.3)",
+    "pillow (==10.4.0)",
+    "transformers (==4.44.2)",
+    "torch (==2.4.1)",
+    "safetensors (==0.4.5)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
